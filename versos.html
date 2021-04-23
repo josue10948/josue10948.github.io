@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enseñame poesia</title>
+  </head>
+  <style>
+    body {
+background: url(estemejor.JPG); 
+background-size: cover;
+background-repeat: repeat;
+margin: 0;
+height: 100vh;
+color:lightyellow
+}
+  ul {
+    list-style-type: none;
+    margin: 100;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+background-color: #000000;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a class="active" href="index.html">E N S E Ñ A M E P O E S I A </a></li>
+    <li><a href="rima.html">R I M A</a></li>
+    <li><a href="licencia poetica.html">L I C E N C I A  P O E T I C A </a></li>
+    <li><a href="reglas de acento.html">R E G L A S  D E  A C E N T O</a></li>
+    <li><a href="referencias.html">R E F E R E N C I A S</a></li>   
+  </ul>  
+  <button class="reproductor">click aqui para una mejor experiencia</button>
+<script>
+    let boton = document.querySelector(".reproductor")
+
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "vers.mp3")
+      etiquetaAudio.play()
+    })
+</script>
+  <div><h2></p>¿Qué son los versos?</p></h2></div>
+  <div style=padding:20px;><h3><p>Son un conjunto de palabras en un poema que forman parte de una unidad del poema, estos se encuentran sujetos a las medidas o ritmos que el propio poeta les brinde, hay dos tipos de verso el de <p style="color:tomato;"> arte mayor</p> los cuales son aquellos que estan formados por 9 silabas metricas y el de <p style="color:magenta;">arte menor</p> los cuales estan formados por 9 o menos silabas.</p>
+    <p>Veamos un ejemplo de este tipo de versos.</p></h3>
+    <div>
+      <p style="color:magenta;">¿Adónde el camino irá?</p>
+
+        <p style="color:magenta;">Yo voy cantando, viajero</p>
+        
+        <p style="color:magenta;">a lo largo del sendero…</p>
+        
+        <p style="color:magenta;">—la tarde cayendo está—</p>
+        
+                          <p>Antonio Machado</p>
+      </div> 
+      <div>
+        <p style="color:tomato;">¡Quién me diera tomar tus manos blancas</p>
+
+        <p style="color:tomato;">para apretarme el corazón con ellas,</p>
+        
+        <p style="color:tomato;">y besarlas… besarlas, escuchando</p>
+        
+        <p style="color:tomato;">de tu amor las dulcísimas querellas!</p>
+        
+                                                 <p> Manuel María Flores</p></div>
+</html>

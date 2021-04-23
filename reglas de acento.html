@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enseñame poesia</title>
+  </head>
+  
+  <style>
+    body {
+background: url(reglas\ de\ acento.JPG); 
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+height: 100vh;
+color:lightyellow
+}
+  ul {
+    list-style-type: none;
+    margin: 100;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+background-color: #000000;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a class="active" href="versos.html">V E R S O S </a></li>
+    <li><a href="rima.html">R I M A</a></li>
+    <li><a href="licencia poetica.html">L I C E N C I A  P O E T I C A </a></li>
+    <li><a href="index.html">E N S E Ñ A M E P O E S I A</a></li>
+    <li><a href="referencias.html">R E F E R E N C I A S</a></li>   
+  </ul>  
+  <button class="reproductor">click aqui para una mejor experiencia</button>
+<script>
+    let boton = document.querySelector(".reproductor")
+
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "final.mp3")
+      etiquetaAudio.play()
+    })
+</script>
+
+
+<div><h2>
+<p>Existen 4 tipos de palabras las cuales son</p>
+<p style="color:mediumaquamarine;">Agudas</p>
+<p>Las cuales son caracterizadas porque tienen el acento en la ultima sílaba</p>
+<p style="color:mediumorchid;"> Llanas</p>
+<p>Se caracterizan porque su sílaba tonica es la penultima</p>
+<p style="color:mediumslateblue">Esdrujulas</p>
+<p>Cuando el acento esta en la antepenultima silaba y es importante recalcar que en estas palabras siempre se pone el acento</p>
+<p style="color:olive">Sobreesdrujulas</p>
+<p>Estas palabras llevan acento en una silaba anterior a la antepenultima y al igual que las esdrujulas siempre lleva acento</p>
+<p>Ejemplos de cada una de las palabras:</p>
+<p style="color:mediumaquamarine;"> Perú, sofá, bebé...</p>
+<p style="color:mediumorchid;">Árbol, cárcel, difícil...</p>
+<p style="color:mediumslateblue;">América,Sudáfrica,música,miércoles...</p>
+<p style="color:olive;"> Éticamente, fácilmente,devuélveselo...</p>
+</h2></div>
+</html>

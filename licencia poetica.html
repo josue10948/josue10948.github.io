@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enseñame poesia</title>
+  </head>
+  <style>
+    body {
+background: url(licencia.JPG); 
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+height: 100vh;
+color: lightyellow
+}
+  ul {
+    list-style-type: none;
+    margin: 100;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+background-color: #000000;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a class="active" href="versos.html">V E R S O S </a></li>
+    <li><a href="rima.html">R I M A</a></li>
+    <li><a href="index.html">E N S E Ñ A M E P O E S I A </a></li>
+    <li><a href="reglas de acento.html">R E G L A S  D E  A C E N T O</a></li>
+    <li><a href="referencias.html">R E F E R E N C I A S</a></li>   
+  </ul>
+  <button class="reproductor">click aqui para una mejor experiencia</button>
+<script>
+    let boton = document.querySelector(".reproductor")
+
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "licncia.mp3")
+      etiquetaAudio.play()
+    })
+</script>
+  <div><h2><p>La licencia poética</p></h2></div>
+  <h3><p>Licencia poética se refiere a distintos recursos de escritura que son utilizados por el poeta con el fin de mantener el mismo numero de silabas en un verso para no restarle musicalidad a la obra.  </p></h3>  
+  <h3><p>Existen distintos recursos que se usan en la licencia poetica como por ejemplo:</p></h3>
+  <h3><p style="color:maroon;"> la Sinalefa, <p style="color:lightyellow"> es la union de una silaba con otra de otra palabra mediante las vocales</p></p></h3>
+ <h3><p style="color:maroon;">Mutuo interes, la oracion se acomodaria como <i>Mu-tuoin-teres</i></p></h3>
+  <h3><p style="color:orange;">el Hiato</p></h3>
+  <h3><p>Es cuando en una palabra hay dos vocales juntas, entonces con esto se dividiria en dos silabas</p></h3>
+  <h3><p style="color:orange;">País dividido en silabas seria <i>Pa-ís</i></p></h3>
+  <h3><p style="color:pink;">la Sinéresis</p></h3>
+  <h3><p>La sinéresis nos permite ligar las vocales de un hiato para hacer menos silabas en un verso</p></h3>
+  <h3><p style="color:pink;"> vi–no, sen–ti–mien–to, gui–ta–rra y <u>poe</u>–sí–a</p></h3>
+  <h3><p style="color:seagreen;">la Diéresis </p></h3>
+  <h3><p>Consiste en separar dos vocales que normalmente forman diptongo, generando una sílaba más</p></h3>
+  <h3><p style="color:seagreen;"> No só-<i>lo_en</i> pla-<i>ta_o</i> vï-o-la tron-ca-da</p></h3>
+  </html>
